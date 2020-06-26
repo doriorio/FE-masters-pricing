@@ -1,70 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
   <link rel="stylesheet" href='styles.css'>
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-<!-- Primary linear class will need to be applied on focus -->
-<section id="pricing">Our Pricing
-  <br />
-  <span class="pricing-options">Annually</span>
-  <label class="switch">
-    <input type="checkbox" checked>
-    <!-- need to add an onclick here -->
-    <span class="slider round primary-linear"></span>
-  </label>
-  <span class="pricing-options">Monthly</span>
-</section>
+  <!-- Primary linear class will need to be applied on focus -->
+  <section id="pricing">
+    <h3>Our Pricing</h3>
+   <span class="pricing-options">Annually</span>
+    <label class="switch">
+      <input type="checkbox" checked>
+      <!-- need to add an onclick here -->
+      <span class="slider round primary-linear"></span>
+    </label>
+    <span class="pricing-options">Monthly</span>
+  </section>
 
   <br />
   <div class="container">
-  <div class="grid-item">
-  Basic
-  <div class="pricing-main pricing-monthly">&dollar;19.99</div>
-  <div class="pricing-yearly">&dollar;199.99</div>
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
-</div>
-<div class="grid-item primary-linear">
-  Professional
-  <div class="pricing-main pricing-monthly">&dollar;24.99</div>
-  <div class="pricing-yearly">&dollar;249.99</div>
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
-</div>
-<div class="grid-item">
-  Master
-  <div class="pricing-main pricing-monthly">&dollar;39.99</div>
-  <div class="pricing-yearly">&dollar;399.99</div>
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
+    <div class="grid-item main">
+      <div class="tier">Basic</div>
+      <div class="pricing-main pricing-monthly">&dollar;19.99</div>
+      <div class="pricing-off pricing-yearly">&dollar;199.99</div>
+      <hr />
+      <span>500 GB Storage</span>
+      <hr />
+      <span>2 Users Allowed</span>
+      <hr />
+      <span>Send up to 3 GB</span>
+      <hr />
+      <button class="learn-more">Learn More</button>
+    </div>
+    <div class="grid-item accent-grid">
+      <div class="tier">Professional</div>
+      <div class="pricing-main pricing-monthly">&dollar;24.99</div>
+      <div class="pricing-off pricing-yearly">&dollar;249.99</div>
+      <hr />
+      <span>1 TB Storage</span>
+      <hr />
+      <span>5 Users Allowed</span>
+      <hr />
+      <span>Send up to 10 GB</span>
+      <hr />
+      <button class="learn-more">Learn More</button>
+    </div>
+    <div class="grid-item main">
+      <div class="tier">Master</div>
+      <div class="pricing-main pricing-monthly">&dollar;39.99</div>
+      <div class="pricing-off pricing-yearly">&dollar;399.99</div>
+      <hr />
+      <span>2 TB Storage</span>
+      <hr />
+      <span>10 Users Allowed</span>
+      <hr />
+      <span>Send up to 20 GB</span>
+      <hr />
+      <button class="learn-more">Learn More</button>
+    </div>
+  </div>
 
-</div>
-</div>
-  
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+
 </html>

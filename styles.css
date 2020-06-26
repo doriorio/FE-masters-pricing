@@ -5,35 +5,79 @@
   --main-font-color-dark: hsl(232, 13%, 33%);
 }
 * {
-    font-size: 15px;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
-
 body {
-  background-color: var(--main);
-
+  background-color: var(--main-background-color);
+  text-align: center;
+  font-size: 15px;
+  background-image: url('./images/bg-top.svg');
+  opacity: 0.9;
 }
+
+h3 {
+  font-size: 2em;
+  font-weight: 900;
+}
+
+
+
 .container {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: 30% 30% 30%;
 }
 
-.container .grid-item:nth-of-type(odd) {
+.container .accent-grid {
   background-color: #ffff;
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: white;
+}
 
+.learn-more {
+  padding: 4% 10%;
+  width: 90%;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12%;
 }
+.accent-grid .learn-more {
+  background-color: #ffff;
+}
+
+.main {
+  background-color: white;
+}
+
+.main .learn-more{
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.main hr {
+  color: var(--main-font-color-dark);
+  width: 80%;
+}
+
+.pricing-off {
+  display: none;
+}
+
 .grid-item {
-    display: inline-block;
-    margin: 5%;
-    padding: 10%;
-    border-radius: 10%;
+    display: inline;
+    margin: 10px;
+
+    line-height: 2rem;
+
+    padding: 2%;
+    border-radius: 4%;
+    box-shadow: 1px 1px 5px hsl(237, 63%, 64%);
 }
-/* Primary linear */
-.primary-linear {
-    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-    color: white;
+
+.grid-item span {
+  padding: 10px;
 }
+
+
 
 #pricing {
     align-items: center;
@@ -41,14 +85,15 @@ body {
 
 .pricing-main {
   font-size: 3em;
-  font-weight: bold;
+  font-weight: 900;
+  margin-bottom: 7%;
   
 }
 /* 
 
 /* Switch */
 .pricing-options {
-    padding: 5%;
+    padding: 1.5%;
 }
 .switch {
     position: relative;
@@ -70,7 +115,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color:  hsl(237, 63%, 64%);
     -webkit-transition: .4s;
     transition: .4s;
   }
