@@ -29,7 +29,8 @@ h3 {
 .container {
   display: grid;
   flex-wrap: wrap;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: center;
 
 }
 
@@ -153,6 +154,18 @@ hr {
   .slider.round:before {
     border-radius: 50%;
   }
+
+  @media only screen and (max-width: 600px) {
+    
+.container {
+
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: 80%;
+}
+  }
+  
+
 /* ### Neutral
 
 - Very Light Grayish Blue: hsl(240, 78%, 98%)
