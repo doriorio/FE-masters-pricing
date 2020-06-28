@@ -59,7 +59,7 @@ h3 {
   background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 }
 
-.main hr {
+hr {
   color: var(--main-font-color-dark);
   width: 80%;
 }

@@ -4,7 +4,6 @@ var yearlyPricing = document.getElementsByClassName('pricing-yearly');
 
 
 checkbox.addEventListener('change', function () {
-
   if (checkbox.checked) {
     Array.prototype.forEach.call(monthlyPricing, price => {
       if (price.classList.contains('pricing-off')){
